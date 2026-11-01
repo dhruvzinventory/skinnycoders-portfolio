@@ -84,4 +84,25 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 900);
     });
   }
+
+  // 6. Hero Console Tabs Switcher
+  const consoleTabs = document.querySelectorAll('.c-tab');
+  const tabPanes = document.querySelectorAll('.tab-pane');
+
+  if (consoleTabs.length > 0 && tabPanes.length > 0) {
+    consoleTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        consoleTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const target = tab.getAttribute('data-tab');
+        tabPanes.forEach(pane => {
+          pane.classList.remove('active');
+          if (pane.id === `pane-${target}`) {
+            pane.classList.add('active');
+          }
+        });
+      });
+    });
+  }
 });

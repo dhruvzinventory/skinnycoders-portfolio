@@ -37,25 +37,178 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-bg-glow"></div>
+  <!-- Hero Section (Upgraded Heaven-to-Eyes Design) -->
+  <section class="hero-section" id="hero">
+    <!-- Atmospheric Ambient Lighting & Cyber Grid -->
+    <div class="hero-bg-canvas">
+      <div class="aurora-glow glow-primary"></div>
+      <div class="aurora-glow glow-cyan"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+
     <div class="container hero-content">
-      <div class="hero-pill">
-        <span class="pulse-dot"></span> Full-Cycle Technology &amp; Growth Partner
+      <!-- Top Pill Badge -->
+      <div class="hero-status-pill">
+        <span class="status-indicator">
+          <span class="pulse-beacon"></span>
+          <span class="pulse-core"></span>
+        </span>
+        <span class="pill-divider"></span>
+        <span class="pill-text"><strong>Accepting New Projects</strong> &bull; Fast-Track Sprints &bull; Q1 2026</span>
       </div>
+
+      <!-- Main Headline -->
       <h1 class="hero-title">
-        We build robust <span class="gradient-text">digital products</span> &amp; drive quantifiable <span class="gradient-text">business growth</span>.
+        Engineering <span class="shimmer-text">Scalable Software</span> &amp; Powering <span class="gradient-cyan-text">Hyper-Growth</span>.
       </h1>
+
       <p class="hero-subtitle">
-        SkinnyCoders bridges modern software engineering with high-velocity marketing. From custom cloud architectures and web apps to AdSense optimization and performance ad funnels, we take you from concept to market leader.
+        SkinnyCoders is the elite technology &amp; growth agency for high-ambition founders. From resilient cloud architectures and high-converting web apps to AdSense monetization and performance marketing funnels&mdash;we build, scale, and deliver.
       </p>
 
+      <!-- Primary CTA Group -->
       <div class="hero-cta-group">
-        <a href="#contact" class="btn btn-lg btn-primary">Start Your Project</a>
-        <a href="#portfolio" class="btn btn-lg btn-outline">Explore Case Studies</a>
+        <a href="#contact" class="btn btn-lg btn-glow">
+          <span>Start Your Project</span>
+          <span class="cta-arrow">&rarr;</span>
+        </a>
+        <a href="#portfolio" class="btn btn-lg btn-glass">
+          <span>Explore Case Studies</span>
+          <span class="cta-down-icon">&darr;</span>
+        </a>
       </div>
 
+      <!-- Live Interactive Engine Console (The Scroll Magnet) -->
+      <div class="hero-console-container">
+        <div class="hero-console-window">
+          <!-- Window Header Bar -->
+          <div class="console-header">
+            <div class="window-controls">
+              <span class="ctrl-dot dot-close"></span>
+              <span class="ctrl-dot dot-min"></span>
+              <span class="ctrl-dot dot-max"></span>
+            </div>
+            <div class="console-title-tab">
+              <span class="git-branch-icon">&#9881;</span>
+              <span>skinnycoders-core/v2.4.0 &mdash; live-engine</span>
+            </div>
+            <!-- Interactive Segment Tabs -->
+            <div class="console-tabs" id="consoleTabs">
+              <button class="c-tab active" data-tab="cloud">01. Web &amp; Cloud</button>
+              <button class="c-tab" data-tab="ai">02. AI &amp; Vector</button>
+              <button class="c-tab" data-tab="growth">03. Growth &amp; AdSense</button>
+            </div>
+          </div>
+
+          <!-- Console Body -->
+          <div class="console-body">
+            <!-- Tab Pane 1: Cloud & Web Architecture -->
+            <div class="tab-pane active" id="pane-cloud">
+              <div class="code-view">
+                <div class="code-line"><span class="syn-comment">// Automated Production Delivery &amp; Cloud Pipeline</span></div>
+                <div class="code-line"><span class="syn-keyword">import</span> { <span class="syn-var">NextEngine</span>, <span class="syn-var">K8sCluster</span>, <span class="syn-var">FastEdge</span> } <span class="syn-keyword">from</span> <span class="syn-str">'@skinnycoders/core'</span>;</div>
+                <div class="code-line"></div>
+                <div class="code-line"><span class="syn-keyword">export async function</span> <span class="syn-func">deployClientArchitecture</span>() {</div>
+                <div class="code-line">  <span class="syn-keyword">const</span> <span class="syn-var">app</span> = <span class="syn-keyword">await</span> <span class="syn-var">NextEngine</span>.<span class="syn-func">initStorefront</span>({</div>
+                <div class="code-line">    <span class="syn-prop">framework</span>: <span class="syn-str">'Next.js 15 App Router + TypeScript'</span>,</div>
+                <div class="code-line">    <span class="syn-prop">edgeCache</span>: <span class="syn-var">FastEdge</span>.<span class="syn-func">geoReplicated</span>(),</div>
+                <div class="code-line">    <span class="syn-prop">orchestration</span>: <span class="syn-var">K8sCluster</span>.<span class="syn-func">awsEKS</span>({ <span class="syn-prop">autoScale</span>: <span class="syn-bool">true</span> })</div>
+                <div class="code-line">  });</div>
+                <div class="code-line">  <span class="syn-keyword">return</span> <span class="syn-var">app</span>.<span class="syn-func">verifyZeroDowntime</span>();</div>
+                <div class="code-line">}</div>
+              </div>
+
+              <div class="telemetry-view">
+                <div class="telemetry-item">
+                  <span class="telem-label">Average Edge Latency</span>
+                  <span class="telem-val val-green"><span class="telem-dot"></span> 38ms</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telem-label">Core Web Vitals</span>
+                  <span class="telem-val val-cyan">100 / 100 Speed</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telem-label">Cloud Deployment</span>
+                  <span class="telem-val">Terraform + EKS</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telem-label">Production SLA Uptime</span>
+                  <span class="telem-val val-green">99.99%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Pane 2: AI & Vector Intelligence -->
+            <div class="tab-pane" id="pane-ai">
+              <div class="code-view">
+                <div class="code-line"><span class="syn-comment"># ContextIQ: Multi-Document Vector Search Engine</span></div>
+                <div class="code-line"><span class="syn-keyword">from</span> <span class="syn-var">fastapi</span> <span class="syn-keyword">import</span> <span class="syn-var">FastAPI</span></div>
+                <div class="code-line"><span class="syn-keyword">from</span> <span class="syn-var">skinnycoders_ai</span> <span class="syn-keyword">import</span> <span class="syn-var">FAISSVectorIndex</span>, <span class="syn-var">BM25Ranker</span></div>
+                <div class="code-line"></div>
+                <div class="code-line"><span class="syn-keyword">async def</span> <span class="syn-func">query_knowledge_base</span>(<span class="syn-var">query</span>: <span class="syn-var">str</span>):</div>
+                <div class="code-line">    <span class="syn-var">dense_vecs</span> = <span class="syn-keyword">await</span> <span class="syn-var">FAISSVectorIndex</span>.<span class="syn-func">similarity_search</span>(<span class="syn-var">query</span>)</div>
+                <div class="code-line">    <span class="syn-var">sparse_ranks</span> = <span class="syn-var">BM25Ranker</span>.<span class="syn-func">score</span>(<span class="syn-var">query</span>)</div>
+                <div class="code-line">    <span class="syn-var">verified</span> = <span class="syn-func">enforce_guardrails</span>(<span class="syn-var">dense_vecs</span>, <span class="syn-var">sparse_ranks</span>)</div>
+                <div class="code-line">    <span class="syn-keyword">return</span> {<span class="syn-str">"answers"</span>: <span class="syn-var">verified</span>, <span class="syn-str">"hallucinations"</span>: <span class="syn-bool">False</span>}</div>
+              </div>
+
+              <div class="telemetry-view">
+                <div class="telemetry-item">
+                  <span class="telem-label">Hybrid Query Speed</span>
+                  <span class="telem-val val-green"><span class="telem-dot"></span> 118ms</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telem-label">Citation Precision</span>
+                  <span class="telem-val val-cyan">99.4% Verified</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telem-label">RAG Architecture</span>
+                  <span class="telem-val">FAISS + BM25</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telem-label">Hallucination Guard</span>
+                  <span class="telem-val val-green">Enforced</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Pane 3: Growth & AdSense Engine -->
+            <div class="tab-pane" id="pane-growth">
+              <div class="code-view">
+                <div class="code-line"><span class="syn-comment">// Full-Funnel Growth &amp; Monetization Pipeline</span></div>
+                <div class="code-line"><span class="syn-keyword">const</span> <span class="syn-var">growthCampaign</span> = <span class="syn-keyword">new</span> <span class="syn-var">PerformanceEngine</span>({</div>
+                <div class="code-line">  <span class="syn-prop">acquisition</span>: [<span class="syn-str">'Google Search Ads'</span>, <span class="syn-str">'Meta Ads'</span>, <span class="syn-str">'LinkedIn'</span>],</div>
+                <div class="code-line">  <span class="syn-prop">monetization</span>: <span class="syn-str">'Google AdSense RPM Optimization'</span>,</div>
+                <div class="code-line">  <span class="syn-prop">organicRankings</span>: <span class="syn-str">'Programmatic Technical SEO'</span>,</div>
+                <div class="code-line">  <span class="syn-prop">targetROAS</span>: <span class="syn-num">4.8</span>,</div>
+                <div class="code-line">  <span class="syn-prop">attribution</span>: <span class="syn-str">'GA4 Full-Funnel Tracking'</span></div>
+                <div class="code-line">});</div>
+              </div>
+
+              <div class="telemetry-view">
+                <div class="telemetry-item">
+                  <span class="telem-label">Target ROAS Multiplier</span>
+                  <span class="telem-val val-green"><span class="telem-dot"></span> 4.8x Achieved</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telem-label">Organic Traffic Velocity</span>
+                  <span class="telem-val val-cyan">+230% Lift</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telem-label">AdSense Layout Yield</span>
+                  <span class="telem-val val-green">+184% Revenue</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telem-label">Lead Quality Score</span>
+                  <span class="telem-val">9.6 / 10 Tier-A</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Stats Counter Ribbon -->
       <div class="stats-ribbon">
         <div class="stat-card">
           <span class="stat-number">99.9%</span>
@@ -64,18 +217,28 @@
         <div class="stat-separator"></div>
         <div class="stat-card">
           <span class="stat-number">3.5x</span>
-          <span class="stat-label">Avg. Client ROI Boost</span>
+          <span class="stat-label">Avg. Client Growth Multiplier</span>
         </div>
         <div class="stat-separator"></div>
         <div class="stat-card">
           <span class="stat-number">100%</span>
-          <span class="stat-label">IP &amp; Code Ownership</span>
+          <span class="stat-label">Code &amp; IP Ownership</span>
         </div>
         <div class="stat-separator"></div>
         <div class="stat-card">
           <span class="stat-number">24/7</span>
-          <span class="stat-label">Uptime &amp; SLA Support</span>
+          <span class="stat-label">SLA &amp; Cloud Maintenance</span>
         </div>
+      </div>
+
+      <!-- Compelling Scroll Cue to Draw Users Down -->
+      <div class="hero-scroll-cue">
+        <a href="#services" class="scroll-link" aria-label="Scroll down to services">
+          <span class="scroll-mouse">
+            <span class="scroll-wheel"></span>
+          </span>
+          <span class="scroll-text">Scroll to explore capabilities</span>
+        </a>
       </div>
     </div>
   </section>
