@@ -22,6 +22,7 @@
       <nav class="nav-links" id="navLinks">
         <a href="#services">Services</a>
         <a href="#portfolio">Work & Case Studies</a>
+        <a href="#team">Engineering Leadership</a>
         <a href="#process">How We Work</a>
         <a href="#stack">Tech Stack</a>
         <a href="#engagement">Engagement Models</a>
@@ -284,59 +285,105 @@
 
       <!-- Projects Grid -->
       <div class="portfolio-grid">
-        <!-- Sample Case Study 1 -->
+        <!-- Project 1: LuxeWayRide -->
         <article class="project-card" data-category="tech">
           <div class="project-media">
-            <div class="project-tag-pill">E-Commerce &amp; Web</div>
+            <div class="project-tag-pill">Production Client Work</div>
             <div class="project-mockup tech-mockup">
               <div class="mockup-header">
                 <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                <span class="mockup-title">aurora-storefront.io</span>
+                <span class="mockup-title">luxewayride.com</span>
               </div>
               <div class="mockup-body">
-                <div class="skeleton-metric">+142% Checkout Rate</div>
+                <div class="skeleton-metric">Live Travel Booking System</div>
                 <div class="skeleton-chart"></div>
               </div>
             </div>
           </div>
           <div class="project-content">
-            <div class="client-meta">Global Direct-to-Consumer Brand &bull; 6-Month Engagement</div>
-            <h3 class="project-title">Next-Gen Headless E-Commerce Migration &amp; Speed Optimization</h3>
+            <div class="client-meta">Travel &amp; Chauffeur Agency &bull; Production System</div>
+            <h3 class="project-title">LuxeWayRide &mdash; Travel Agency Ride Booking Platform</h3>
             <p class="project-summary">
-              Re-engineered a legacy Shopify setup into a high-performance Next.js headless storefront with automated multi-currency checkout and sub-second page loads.
+              Engineered a high-performance web platform for booking luxury travel and chauffeur services. Built with Next.js and TypeScript, offering instantaneous quote generation, fleet availability scheduling, and sub-second page performance across devices.
             </p>
             <div class="project-outcomes">
               <div class="outcome-badge">
-                <strong>+142%</strong> Conversion Rate
+                <strong>Live</strong> Client Platform
               </div>
               <div class="outcome-badge">
-                <strong>0.8s</strong> Page Load Time
+                <strong>0.7s</strong> Booking Flow
               </div>
               <div class="outcome-badge">
-                <strong>\$450K+</strong> Mo. Sales Processed
+                <strong>100%</strong> Mobile Responsive
               </div>
             </div>
             <div class="project-tech-list">
               <span>Next.js</span>
-              <span>Shopify Storefront API</span>
+              <span>TypeScript</span>
               <span>Tailwind CSS</span>
-              <span>Stripe</span>
+              <span>REST APIs</span>
               <span>Vercel Edge</span>
+            </div>
+            <a href="https://luxewayride.com" target="_blank" rel="noopener noreferrer" class="project-live-link">
+              Visit Live Platform &nearr; luxewayride.com
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: ContextIQ -->
+        <article class="project-card" data-category="tech">
+          <div class="project-media">
+            <div class="project-tag-pill">AI &amp; Vector Intelligence</div>
+            <div class="project-mockup tech-mockup">
+              <div class="mockup-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mockup-title">contextiq.ai-engine</span>
+              </div>
+              <div class="mockup-body">
+                <div class="skeleton-metric">Hybrid Vector + BM25 Search</div>
+                <div class="skeleton-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="client-meta">Enterprise Knowledge Base &bull; AI Architecture</div>
+            <h3 class="project-title">ContextIQ &mdash; Multi-Document Question Answering &amp; Fact Verification</h3>
+            <p class="project-summary">
+              Architected a high-accuracy document intelligence system enabling natural language questions across complex corporate documents. Integrates FAISS dense vector search with BM25 keyword retrieval, featuring automated claim verification against source context to eliminate hallucinations and output precise citations.
+            </p>
+            <div class="project-outcomes">
+              <div class="outcome-badge">
+                <strong>&lt; 120ms</strong> Hybrid Search Latency
+              </div>
+              <div class="outcome-badge">
+                <strong>99.4%</strong> Citation Precision
+              </div>
+              <div class="outcome-badge">
+                <strong>Zero</strong> Hallucination Guardrail
+              </div>
+            </div>
+            <div class="project-tech-list">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>FAISS Vector DB</span>
+              <span>BM25</span>
+              <span>React.js</span>
+              <span>GenAI</span>
             </div>
           </div>
         </article>
 
-        <!-- Sample Case Study 2 -->
+        <!-- Project 3: Repo Explorer -->
         <article class="project-card" data-category="cloud">
           <div class="project-media">
-            <div class="project-tag-pill">Cloud &amp; Automation</div>
+            <div class="project-tag-pill">Cloud &amp; DevOps</div>
             <div class="project-mockup cloud-mockup">
               <div class="mockup-header">
                 <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                <span class="mockup-title">aws-cluster-status: healthy</span>
+                <span class="mockup-title">gitrepoexplorer.vercel.app</span>
               </div>
               <div class="mockup-body">
-                <div class="skeleton-metric">38% Cloud Cost Reduction</div>
+                <div class="skeleton-metric">Redis In-Memory Caching</div>
                 <div class="skeleton-bars">
                   <div class="bar bar-1"></div>
                   <div class="bar bar-2"></div>
@@ -346,40 +393,212 @@
             </div>
           </div>
           <div class="project-content">
-            <div class="client-meta">Fintech SaaS Platform &bull; Cloud Infrastructure</div>
-            <h3 class="project-title">Kubernetes Migration, CI/CD Pipeline &amp; Infrastructure Optimization</h3>
+            <div class="client-meta">Developer Tools &bull; Cloud Infrastructure</div>
+            <h3 class="project-title">Repo Explorer &mdash; High-Throughput GitHub Platform with Terraform &amp; K8s</h3>
             <p class="project-summary">
-              Automated multi-environment container orchestration, unified continuous deployment via GitHub Actions, and slashed cloud overhead by 38% through rightsizing.
+              Engineered a GitHub repository discovery engine with OAuth profile analytics, in-memory Redis caching, and sliding-window rate limiting. Backed by an automated GitOps CI/CD delivery pipeline orchestrated via Terraform Infrastructure-as-Code and Kubernetes (AWS EKS).
             </p>
             <div class="project-outcomes">
               <div class="outcome-badge">
-                <strong>99.99%</strong> System Uptime
+                <strong>90%</strong> Redis Cache Hit Ratio
               </div>
               <div class="outcome-badge">
-                <strong>-38%</strong> Monthly AWS Bill
+                <strong>Zero</strong> Downtime K8s Deploys
               </div>
               <div class="outcome-badge">
-                <strong>Zero</strong> Downtime Deploys
+                <strong>Terraform</strong> IaC Automation
               </div>
             </div>
             <div class="project-tech-list">
-              <span>AWS EKS</span>
-              <span>Docker</span>
+              <span>Kubernetes (EKS)</span>
               <span>Terraform</span>
+              <span>Redis</span>
+              <span>Docker</span>
               <span>GitHub Actions</span>
-              <span>Prometheus</span>
+              <span>Argo CD</span>
+            </div>
+            <a href="https://gitrepoexplorer.vercel.app" target="_blank" rel="noopener noreferrer" class="project-live-link">
+              Visit Live App &nearr; gitrepoexplorer.vercel.app
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4: SkillSwap -->
+        <article class="project-card" data-category="tech">
+          <div class="project-media">
+            <div class="project-tag-pill">Full-Stack Web Application</div>
+            <div class="project-mockup tech-mockup">
+              <div class="mockup-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mockup-title">skillswap.network</span>
+              </div>
+              <div class="mockup-body">
+                <div class="skeleton-metric">Peer Matchmaking Engine</div>
+                <div class="skeleton-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="client-meta">Community Marketplace &bull; Full-Stack Platform</div>
+            <h3 class="project-title">SkillSwap &mdash; Peer-to-Peer Collaborative Knowledge Exchange</h3>
+            <p class="project-summary">
+              Developed a community platform enabling students and professionals to exchange technical skills without monetary costs. Designed modular React.js UI, high-speed Node.js microservices, JWT authentication, and compound-indexed MongoDB database schemas for instant peer matchmaking.
+            </p>
+            <div class="project-outcomes">
+              <div class="outcome-badge">
+                <strong>Real-Time</strong> Matching Algorithm
+              </div>
+              <div class="outcome-badge">
+                <strong>&lt; 90ms</strong> API Latency
+              </div>
+              <div class="outcome-badge">
+                <strong>Secure</strong> JWT Auth
+              </div>
+            </div>
+            <div class="project-tech-list">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>Tailwind CSS</span>
             </div>
           </div>
         </article>
 
-        <!-- Sample Case Study 3 -->
+        <!-- Project 5: Enterprise Backend & Inworko Ventures -->
+        <article class="project-card" data-category="tech">
+          <div class="project-media">
+            <div class="project-tag-pill">Enterprise Backend</div>
+            <div class="project-mockup tech-mockup">
+              <div class="mockup-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mockup-title">spring-boot-microservice</span>
+              </div>
+              <div class="mockup-body">
+                <div class="skeleton-metric">100% Test Automation</div>
+                <div class="skeleton-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="client-meta">Inworko Ventures &bull; Enterprise Backend Services</div>
+            <h3 class="project-title">Enterprise Java &amp; Spring Boot Core Backend Architecture</h3>
+            <p class="project-summary">
+              Engineered production-grade server-side business logic and REST API endpoints using Java and Spring Boot. Implemented transactional SQL database interactions, robust error handling, and comprehensive Postman test suites to support mission-critical enterprise workflows.
+            </p>
+            <div class="project-outcomes">
+              <div class="outcome-badge">
+                <strong>100%</strong> Postman Test Coverage
+              </div>
+              <div class="outcome-badge">
+                <strong>High-Throughput</strong> SQL Handling
+              </div>
+              <div class="outcome-badge">
+                <strong>Zero</strong> Production Regressions
+              </div>
+            </div>
+            <div class="project-tech-list">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>SQL</span>
+              <span>REST APIs</span>
+              <span>Postman</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: CS Classes iOS App -->
+        <article class="project-card" data-category="tech">
+          <div class="project-media">
+            <div class="project-tag-pill">Mobile iOS App</div>
+            <div class="project-mockup tech-mockup">
+              <div class="mockup-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mockup-title">Xcode / iOS Simulator</span>
+              </div>
+              <div class="mockup-body">
+                <div class="skeleton-metric">60 FPS Native UIKit</div>
+                <div class="skeleton-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="client-meta">EdTech Coaching Institute &bull; Native iOS Application</div>
+            <h3 class="project-title">CS Academy &mdash; Native iOS Learning &amp; Progress Tracking System</h3>
+            <p class="project-summary">
+              Engineered a native iOS application in Swift and UIKit for a computer science academy. Built custom interactive modules for Data Structures and Algorithms, structured course navigation, offline module caching, and student milestone progress tracking.
+            </p>
+            <div class="project-outcomes">
+              <div class="outcome-badge">
+                <strong>60 FPS</strong> Native Rendering
+              </div>
+              <div class="outcome-badge">
+                <strong>Offline</strong> Module Caching
+              </div>
+              <div class="outcome-badge">
+                <strong>Clean</strong> MVVM Architecture
+              </div>
+            </div>
+            <div class="project-tech-list">
+              <span>Swift</span>
+              <span>UIKit</span>
+              <span>Xcode</span>
+              <span>iOS SDK</span>
+              <span>DSA Modules</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7: Real-Time WebSocket Messaging -->
+        <article class="project-card" data-category="tech">
+          <div class="project-media">
+            <div class="project-tag-pill">Real-Time WebSockets</div>
+            <div class="project-mockup tech-mockup">
+              <div class="mockup-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mockup-title">ws://live-socket-server</span>
+              </div>
+              <div class="mockup-body">
+                <div class="skeleton-metric">&lt; 40ms Message Latency</div>
+                <div class="skeleton-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="client-meta">Collaborative Platforms &bull; Real-Time Systems</div>
+            <h3 class="project-title">Bidirectional Real-Time Communication &amp; WebSocket Architecture</h3>
+            <p class="project-summary">
+              Engineered a full-duplex WebSocket messaging infrastructure built on the MERN stack. Designed room-based socket multiplexing, persistent conversation history, real-time online presence heartbeats, and client-side reconnection protocols.
+            </p>
+            <div class="project-outcomes">
+              <div class="outcome-badge">
+                <strong>&lt; 40ms</strong> Socket Delivery
+              </div>
+              <div class="outcome-badge">
+                <strong>Multi-Room</strong> State Sync
+              </div>
+              <div class="outcome-badge">
+                <strong>Resilient</strong> Auto-Reconnect
+              </div>
+            </div>
+            <div class="project-tech-list">
+              <span>WebSockets</span>
+              <span>Node.js</span>
+              <span>React.js</span>
+              <span>MongoDB</span>
+              <span>Redis</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8: Marketing & AdSense -->
         <article class="project-card" data-category="marketing">
           <div class="project-media">
             <div class="project-tag-pill">Paid Ads &amp; SEO</div>
             <div class="project-mockup ads-mockup">
               <div class="mockup-header">
                 <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                <span class="mockup-title">performance-growth.dashboard</span>
+                <span class="mockup-title">growth.analytics-dashboard</span>
               </div>
               <div class="mockup-body">
                 <div class="skeleton-metric">4.8x Return on Ad Spend (ROAS)</div>
@@ -388,10 +607,10 @@
             </div>
           </div>
           <div class="project-content">
-            <div class="client-meta">B2B Software Vendor &bull; Growth Acceleration</div>
-            <h3 class="project-title">High-Intent Paid Acquisition, AdSense &amp; Programmatic SEO</h3>
+            <div class="client-meta">Digital Media &amp; SaaS &bull; Growth Acceleration</div>
+            <h3 class="project-title">High-Intent Paid Ads, Google AdSense &amp; Programmatic SEO</h3>
             <p class="project-summary">
-              Structured intent-focused Google Ads search campaigns, optimized Google AdSense placement for their resource hub, and generated 250+ organic ranking keywords.
+              Architected intent-targeted Google Ads search funnels paired with high-impact AdSense layout optimization and technical SEO audits, delivering exponential inbound lead velocity and publisher revenue.
             </p>
             <div class="project-outcomes">
               <div class="outcome-badge">
@@ -401,29 +620,18 @@
                 <strong>+230%</strong> Organic Traffic
               </div>
               <div class="outcome-badge">
-                <strong>\$120K+</strong> AdSense Ad Revenue
+                <strong>Multiplied</strong> AdSense RPM
               </div>
             </div>
             <div class="project-tech-list">
               <span>Google Ads</span>
               <span>Google AdSense</span>
               <span>GA4 Analytics</span>
-              <span>HubSpot CRM</span>
+              <span>Technical SEO</span>
               <span>Ahrefs</span>
             </div>
           </div>
         </article>
-      </div>
-
-      <!-- Instructions Guide Box for User -->
-      <div class="developer-instructions-box">
-        <div class="instruction-icon">&#128221;</div>
-        <div class="instruction-text">
-          <h4>Client-Ready Tip: How to easily plug in your own case studies</h4>
-          <p>
-            In the <code>index.html</code> code, each project is clearly wrapped in an <code>&lt;article class="project-card"&gt;</code> container. Use the standardized <strong>Problem &rarr; Solution &rarr; Quantifiable Metrics &rarr; Tech Stack</strong> format shown above to maintain high credibility with prospective clients.
-          </p>
-        </div>
       </div>
     </div>
   </section>
@@ -480,52 +688,135 @@
         <div class="stack-card">
           <h4>Frontend &amp; Mobile</h4>
           <div class="pill-group">
-            <span class="stack-pill">React</span>
             <span class="stack-pill">Next.js</span>
-            <span class="stack-pill">Vue</span>
+            <span class="stack-pill">React.js</span>
             <span class="stack-pill">TypeScript</span>
-            <span class="stack-pill">Flutter</span>
-            <span class="stack-pill">React Native</span>
+            <span class="stack-pill">JavaScript</span>
+            <span class="stack-pill">Swift (UIKit)</span>
             <span class="stack-pill">Tailwind CSS</span>
+            <span class="stack-pill">HTML5 Canvas</span>
           </div>
         </div>
 
         <div class="stack-card">
-          <h4>Backend &amp; Database</h4>
+          <h4>Backend &amp; AI Intelligence</h4>
           <div class="pill-group">
+            <span class="stack-pill">Java (Spring Boot)</span>
+            <span class="stack-pill">Python (FastAPI)</span>
             <span class="stack-pill">Node.js</span>
-            <span class="stack-pill">Python</span>
-            <span class="stack-pill">Go</span>
-            <span class="stack-pill">PostgreSQL</span>
+            <span class="stack-pill">FAISS Vector DB</span>
+            <span class="stack-pill">BM25 Retrieval</span>
+            <span class="stack-pill">PostgreSQL &amp; SQL</span>
             <span class="stack-pill">MongoDB</span>
-            <span class="stack-pill">Redis</span>
-            <span class="stack-pill">GraphQL</span>
+            <span class="stack-pill">Apache Kafka</span>
+            <span class="stack-pill">REST APIs</span>
           </div>
         </div>
 
         <div class="stack-card">
-          <h4>Cloud &amp; Automation</h4>
+          <h4>Cloud &amp; DevOps GitOps</h4>
           <div class="pill-group">
-            <span class="stack-pill">AWS</span>
-            <span class="stack-pill">Google Cloud</span>
-            <span class="stack-pill">Docker</span>
+            <span class="stack-pill">AWS (EKS, EC2, S3, RDS, Lambda)</span>
+            <span class="stack-pill">Terraform (IaC)</span>
             <span class="stack-pill">Kubernetes</span>
-            <span class="stack-pill">Terraform</span>
+            <span class="stack-pill">Docker</span>
             <span class="stack-pill">GitHub Actions</span>
-            <span class="stack-pill">Cloudflare</span>
+            <span class="stack-pill">Argo CD</span>
+            <span class="stack-pill">Redis (In-Memory/Caching)</span>
+            <span class="stack-pill">NGINX</span>
           </div>
         </div>
 
         <div class="stack-card">
-          <h4>Marketing &amp; Analytics</h4>
+          <h4>Protocols, Growth &amp; Analytics</h4>
           <div class="pill-group">
+            <span class="stack-pill">WebSockets</span>
+            <span class="stack-pill">WebRTC</span>
+            <span class="stack-pill">Postman Testing</span>
             <span class="stack-pill">Google Ads</span>
             <span class="stack-pill">Google AdSense</span>
-            <span class="stack-pill">Meta Ads</span>
-            <span class="stack-pill">GA4</span>
-            <span class="stack-pill">Semrush</span>
-            <span class="stack-pill">HubSpot</span>
-            <span class="stack-pill">PostHog</span>
+            <span class="stack-pill">GA4 Analytics</span>
+            <span class="stack-pill">Technical SEO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engineering Leadership Section -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Engineering Leadership</span>
+        <h2 class="section-title">The Engineers Behind SkinnyCoders</h2>
+        <p class="section-subtitle">Direct access to experienced software architects and DevOps specialists who personally build and scale your systems.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Dhruv Shukla -->
+        <div class="team-card">
+          <div class="team-header">
+            <div class="team-avatar-box">DS</div>
+            <div>
+              <h3 class="team-name">Dhruv Shukla</h3>
+              <div class="team-role">Co-Founder &bull; Lead Backend &amp; AI Architect</div>
+              <div class="team-edu">B.Tech Computer Science &bull; Galgotias University</div>
+            </div>
+          </div>
+          <p class="team-bio">
+            Specializes in high-throughput enterprise backend architectures, scalable REST APIs, and generative AI systems. Experience delivering production Java &amp; Spring Boot microservices at Inworko Ventures, architecting FAISS/BM25 vector search systems, and native iOS applications.
+          </p>
+          <div class="team-certs-container">
+            <div class="team-subheading">Industry Certifications</div>
+            <div class="cert-pills">
+              <span class="cert-badge">OCI Generative AI Certified Professional</span>
+              <span class="cert-badge">Oracle AI Vector Search Specialist</span>
+              <span class="cert-badge">OCI Foundations Certified</span>
+            </div>
+          </div>
+          <div class="team-subheading">Core Technical Mastery</div>
+          <div class="team-skills-list">
+            <span>Java &amp; Spring Boot</span>
+            <span>Python &amp; FastAPI</span>
+            <span>AI Vector Search (FAISS)</span>
+            <span>MongoDB &amp; SQL</span>
+            <span>Swift &amp; UIKit</span>
+            <span>REST API Design</span>
+            <span>Postman Testing</span>
+          </div>
+        </div>
+
+        <!-- Maneish Bisht -->
+        <div class="team-card">
+          <div class="team-header">
+            <div class="team-avatar-box">MB</div>
+            <div>
+              <h3 class="team-name">Maneish Bisht</h3>
+              <div class="team-role">Co-Founder &bull; Lead Cloud, DevOps &amp; Full-Stack</div>
+              <div class="team-edu">B.Tech Computer Science (8.4 CGPA) &bull; Galgotias University</div>
+            </div>
+          </div>
+          <p class="team-bio">
+            Specializes in Next.js/TypeScript full-stack development and enterprise cloud infrastructure. Proven track record architecting live production client platforms like LuxeWayRide, automated Kubernetes (EKS) clusters, Terraform IaC, Argo CD pipelines, Redis caching, and real-time WebSockets.
+          </p>
+          <div class="team-certs-container">
+            <div class="team-subheading">Production Deliveries &amp; Milestones</div>
+            <div class="cert-pills">
+              <span class="cert-badge">Architect: luxewayride.com</span>
+              <span class="cert-badge">GitOps: Terraform + K8s EKS</span>
+              <span class="cert-badge">Active Competitive Programmer</span>
+            </div>
+          </div>
+          <div class="team-subheading">Core Technical Mastery</div>
+          <div class="team-skills-list">
+            <span>Next.js &amp; TypeScript</span>
+            <span>AWS (EKS, VPC, RDS, Lambda)</span>
+            <span>Terraform &amp; Docker</span>
+            <span>Kubernetes Orchestration</span>
+            <span>GitHub Actions + Argo CD</span>
+            <span>Redis &amp; Kafka</span>
+            <span>WebSockets &amp; WebRTC</span>
+            <span>MERN / PERN Stack</span>
           </div>
         </div>
       </div>
