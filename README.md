@@ -4,25 +4,13 @@ Professional, high-performance portfolio website for **SkinnyCoders**, an IT ser
 
 ---
 
-## 👥 Engineering Leadership
-
-- **Dhruv Shukla** — Co-Founder & Lead Backend / AI Architect
-  - *Certifications:* OCI Generative AI Certified Professional, Oracle AI Vector Search Specialist, OCI Foundations.
-  - *Tech:* Java, Spring Boot, Python, FastAPI, FAISS Vector Search, BM25 Retrieval, MongoDB, SQL, Swift (UIKit).
-  - *Experience:* Inworko Ventures Backend Engineering, ContextIQ AI Engine, SkillSwap Platform.
-- **Maneish Bisht** — Co-Founder & Lead Cloud / DevOps & Full-Stack Architect
-  - *Tech:* Next.js, TypeScript, MERN/PERN, AWS (EKS, EC2, S3, RDS, Lambda), Terraform IaC, Docker, Kubernetes, Argo CD, Kafka, Redis, WebSockets, WebRTC.
-  - *Experience:* Architect of LuxeWayRide (`luxewayride.com`), Repo Explorer (`gitrepoexplorer.vercel.app`).
-
----
-
-## 💼 Featured Case Studies & Experience Added
+## 💼 Featured Case Studies & Client Deliveries
 
 1. **LuxeWayRide (Live Client Platform):** Production travel booking platform in Next.js & TypeScript (`luxewayride.com`).
 2. **ContextIQ (AI Vector Search):** Multi-document question answering with FAISS vector retrieval, BM25 keyword search, and automated claim verification.
 3. **Repo Explorer (Cloud & DevOps):** High-throughput GitHub analysis platform with Redis in-memory caching, rate limiting, Terraform IaC, and Kubernetes orchestration.
 4. **SkillSwap:** Full-stack peer-to-peer collaborative marketplace built with React, Node.js, and MongoDB.
-5. **Inworko Ventures Production Backend:** Enterprise Java & Spring Boot microservices, transactional SQL optimization, and automated Postman test suites.
+5. **Enterprise Java Backend Services:** Production-grade Java & Spring Boot microservices, transactional SQL optimization, and automated Postman test suites.
 6. **CS Classes App:** Native iOS educational platform built in Swift and UIKit featuring DSA learning modules.
 7. **Real-Time WebSocket Engine:** Low-latency bidirectional messaging system with Redis caching and multi-room socket multiplexing.
 8. **Growth & Monetization:** High-intent Google Ads campaigns, Google AdSense RPM optimization, and technical SEO.
@@ -52,7 +40,7 @@ Professional, high-performance portfolio website for **SkinnyCoders**, an IT ser
 ## 🛠️ Project Structure
 ```
 skinnycoders-portfolio/
-├── index.html     # Agency portfolio markup, case studies & leadership section
+├── index.html     # Agency portfolio markup, case studies & services
 ├── styles.css     # Responsive dark-theme modern agency styling
 ├── script.js      # Filter animations, dynamic year, and contact interaction
 └── README.md      # Documentation
