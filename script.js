@@ -105,4 +105,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // 7. Replay Logo SVG Animation on Click
+  const brandLogo = document.getElementById('brandLogo');
+  if (brandLogo) {
+    brandLogo.addEventListener('click', () => {
+      const markS = brandLogo.querySelector('.mark-s');
+      const markCur = brandLogo.querySelector('.mark-cur');
+      if (markS && markCur) {
+        markS.style.animation = 'none';
+        markCur.style.animation = 'none';
+        void markS.offsetWidth;
+        markS.style.animation = 'drawMarkS 1.6s cubic-bezier(0.65, 0, 0.25, 1) forwards';
+        markCur.style.animation = 'popCur 0.3s 1.6s forwards, blinkCur 1s 1.9s steps(1) infinite';
+      }
+    });
+  }
 });

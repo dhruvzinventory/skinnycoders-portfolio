@@ -7,16 +7,33 @@
   <meta name="description" content="SkinnyCoders delivers scalable web & software development, cloud infrastructure, and data-driven marketing to power modern enterprises." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Brand SVG Gradient Definitions -->
+  <svg width="0" height="0" style="position:absolute;pointer-events:none" aria-hidden="true">
+    <defs>
+      <linearGradient id="scBrandGrad" gradientUnits="userSpaceOnUse" x1="76" y1="8" x2="14" y2="92">
+        <stop offset="0%" stop-color="#22e3ff"/>
+        <stop offset="55%" stop-color="#2f6bff"/>
+        <stop offset="100%" stop-color="#8b5cff"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
   <!-- Header & Navigation -->
   <header class="site-header" id="header">
     <div class="container header-container">
-      <a href="#" class="brand-logo">
-        <span class="logo-badge">&lt;/&gt;</span>
-        <span class="logo-text">Skinny<span class="highlight">Coders</span></span>
+      <a href="#" class="brand-logo" id="brandLogo">
+        <svg class="brand-mark-svg" viewBox="0 0 100 100" role="img" aria-label="SkinnyCoders mark">
+          <path class="mark-s" pathLength="1" d="M76 20C68 6 30 6 28 28C26 50 74 48 72 70C70 94 30 92 26 80" fill="none" stroke="url(#scBrandGrad)" stroke-width="7" stroke-linecap="round"/>
+          <rect class="mark-cur" x="10" y="68" width="9" height="24" rx="2" fill="#bff6ff"/>
+        </svg>
+        <div class="brand-text-wrap">
+          <span class="brand-name"><span class="brand-skinny">skinny</span><span class="brand-coders">coders</span></span>
+          <span class="brand-tagline">Lean code. Heavy results.</span>
+        </div>
       </a>
 
       <nav class="nav-links" id="navLinks">
@@ -1101,11 +1118,17 @@
     <div class="container footer-content">
       <div class="footer-brand">
         <a href="#" class="brand-logo">
-          <span class="logo-badge">&lt;/&gt;</span>
-          <span class="logo-text">Skinny<span class="highlight">Coders</span></span>
+          <svg class="brand-mark-svg" viewBox="0 0 100 100" role="img" aria-label="SkinnyCoders mark">
+            <path class="mark-s" pathLength="1" d="M76 20C68 6 30 6 28 28C26 50 74 48 72 70C70 94 30 92 26 80" fill="none" stroke="url(#scBrandGrad)" stroke-width="7" stroke-linecap="round"/>
+            <rect class="mark-cur" x="10" y="68" width="9" height="24" rx="2" fill="#bff6ff"/>
+          </svg>
+          <div class="brand-text-wrap">
+            <span class="brand-name"><span class="brand-skinny">skinny</span><span class="brand-coders">coders</span></span>
+            <span class="brand-tagline">Lean code. Heavy results.</span>
+          </div>
         </a>
         <p class="footer-tagline">
-          High-performance technology engineering &amp; digital marketing agency for next-gen businesses.
+          High-performance technology engineering &amp; digital marketing agency. Lean code, heavy results.
         </p>
       </div>
 

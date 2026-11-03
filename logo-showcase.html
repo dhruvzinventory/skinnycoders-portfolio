@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SkinnyCoders Brand Identity</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap">
+<style>
+:root {
+  --bg: #05070d;
+  --ink: #eaf2ff;
+  --mute: #6f7e97;
+  --cyan: #22e3ff;
+  --blue: #2f6bff;
+  --violet: #8b5cff;
+  --paper: #f3f6fb;
+  --navy: #0b1220;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  background: radial-gradient(ellipse 80% 60% at 50% 30%, #0c1630 0%, var(--bg) 70%);
+  color: var(--ink);
+  font-family: 'Sora', system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 5rem 1.25rem 4rem;
+  cursor: pointer;
+}
+.lock {
+  display: flex;
+  align-items: center;
+  gap: clamp(.6rem, 2vw, 1.4rem);
+  flex-wrap: nowrap;
+}
+.lock svg {
+  width: clamp(64px, 13vw, 150px);
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 0 18px rgba(34, 227, 255, 0.45));
+}
+.word {
+  font-size: clamp(2.2rem, 7vw, 5.2rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+  margin: 0;
+}
+.word .a {
+  font-weight: 200;
+  color: var(--ink);
+}
+.word .b {
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--cyan), var(--blue) 60%, var(--violet));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.tag {
+  margin: 1.25rem 0 0;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--mute);
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+  text-align: center;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.cur {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+.word, .tag {
+  opacity: 0;
+}
+.play .s {
+  animation: draw 1.7s cubic-bezier(.65, 0, .25, 1) forwards;
+}
+.play .cur {
+  animation: pop .3s 1.7s forwards, blink 1s 2s steps(1) infinite;
+}
+.play .word {
+  animation: rise .9s 1.5s cubic-bezier(.2, .7, .2, 1) forwards;
+}
+.play .tag {
+  animation: rise .9s 2.1s ease forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes pop { from { opacity: 0; transform: scaleY(.2); } to { opacity: 1; transform: none; } }
+@keyframes blink { 50% { opacity: .15; } }
+@keyframes rise {
+  from { opacity: 0; transform: translateX(-.5rem); letter-spacing: .05em; }
+  to { opacity: 1; transform: none; letter-spacing: -0.045em; }
+}
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 900px;
+}
+.tile {
+  width: 160px;
+  height: 160px;
+  border-radius: 28px;
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s ease;
+}
+.tile:hover {
+  transform: translateY(-4px);
+}
+.tile svg { width: 96px; height: 96px; }
+.t1 {
+  background: linear-gradient(150deg, #0d1a3a, #05070d);
+  border: 1px solid rgba(34, 227, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.t2 {
+  background: linear-gradient(145deg, var(--cyan), var(--blue) 55%, var(--violet));
+  box-shadow: 0 10px 30px rgba(47, 107, 255, 0.35);
+}
+.t3 {
+  background: var(--paper);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.wide {
+  width: min(100%, 520px);
+  height: 160px;
+  border-radius: 28px;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  color: var(--navy);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.wide svg { width: 56px; height: 56px; }
+.wide .word { font-size: 2.3rem; opacity: 1; }
+.wide .a { color: var(--navy); }
+.wide .b {
+  background: linear-gradient(90deg, #0a8fb0, var(--blue) 60%, var(--violet));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.click-prompt {
+  font-size: 0.85rem;
+  color: var(--mute);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="76" y1="8" x2="14" y2="92">
+      <stop offset="0" stop-color="#22e3ff"/>
+      <stop offset=".55" stop-color="#2f6bff"/>
+      <stop offset="1" stop-color="#8b5cff"/>
+    </linearGradient>
+    <linearGradient id="g2" gradientUnits="userSpaceOnUse" x1="76" y1="8" x2="14" y2="92">
+      <stop offset="0" stop-color="#0a8fb0"/>
+      <stop offset=".55" stop-color="#2f6bff"/>
+      <stop offset="1" stop-color="#8b5cff"/>
+    </linearGradient>
+    <path id="sp" d="M76 20C68 6 30 6 28 28C26 50 74 48 72 70C70 94 30 92 26 80"/>
+    <rect id="cu" x="10" y="68" width="9" height="24" rx="2"/>
+  </defs>
+</svg>
+
+<div class="hero" id="hero">
+  <div class="lock">
+    <svg viewBox="0 0 100 100" role="img" aria-label="SkinnyCoders mark">
+      <path class="s" pathLength="1" d="M76 20C68 6 30 6 28 28C26 50 74 48 72 70C70 94 30 92 26 80" fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round"/>
+      <rect class="cur" x="10" y="68" width="9" height="24" rx="2" fill="#bff6ff"/>
+    </svg>
+    <h1 class="word"><span class="a">skinny</span><span class="b">coders</span></h1>
+  </div>
+  <p class="tag">Lean code. Heavy results.</p>
+</div>
+
+<span class="click-prompt">Click anywhere to replay animation</span>
+
+<div class="tiles">
+  <div class="tile t1" title="Dark Mode Social Avatar (Instagram / LinkedIn)"><svg viewBox="0 0 100 100"><use href="#sp" fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round"/><use href="#cu" fill="#bff6ff"/></svg></div>
+  <div class="tile t2" title="Electric Gradient Tile"><svg viewBox="0 0 100 100"><use href="#sp" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><use href="#cu" fill="#05070d"/></svg></div>
+  <div class="tile t3" title="Light Paper Mode"><svg viewBox="0 0 100 100"><use href="#sp" fill="none" stroke="url(#g2)" stroke-width="7" stroke-linecap="round"/><use href="#cu" fill="#0b1220"/></svg></div>
+  <div class="wide" title="Horizontal Wordmark Lockup"><svg viewBox="0 0 100 100"><use href="#sp" fill="none" stroke="url(#g2)" stroke-width="7" stroke-linecap="round"/><use href="#cu" fill="#0b1220"/></svg><div class="word"><span class="a">skinny</span><span class="b">coders</span></div></div>
+</div>
+
+<script>
+(function(){
+  var h = document.getElementById('hero');
+  function play(){ h.classList.remove('play'); void h.offsetWidth; h.classList.add('play'); }
+  document.body.addEventListener('click', play);
+  (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(play);
+})();
+</script>
+</body>
+</html>
