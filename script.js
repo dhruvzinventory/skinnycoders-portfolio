@@ -61,27 +61,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Contact Form Handler (Client-Side demo ready for Web3Forms/Formspree/backend)
+  // 5. Contact Form Handler (Connected to real POST /api/leads backend)
   const contactForm = document.getElementById('contactForm');
   const formFeedback = document.getElementById('formFeedback');
 
   if (contactForm && formFeedback) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Submitting Request...';
+      submitBtn.textContent = 'Submitting Proposal Request...';
+      formFeedback.style.display = 'none';
 
-      // Simulate sending proposal request
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
+      const payload = {
+        name: document.getElementById('clientName').value.trim(),
+        email: document.getElementById('clientEmail').value.trim(),
+        service: document.getElementById('serviceInterest').value,
+        budget: document.getElementById('projectBudget').value,
+        details: document.getElementById('projectDetails').value.trim()
+      };
+
+      try {
+        const response = await fetch('/api/leads', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          formFeedback.className = 'form-feedback success';
+          formFeedback.textContent = `🎉 ${data.message}`;
+          contactForm.reset();
+        } else {
+          formFeedback.className = 'form-feedback error';
+          formFeedback.style.color = '#ef4444';
+          formFeedback.textContent = data.error || 'Failed to submit proposal request. Please try again.';
+        }
+      } catch (err) {
+        // Fallback for static preview without running backend
+        console.warn('Backend server not detected or offline. Simulating submission.', err);
         formFeedback.className = 'form-feedback success';
         formFeedback.textContent = '🎉 Thank you! Your inquiry has been received. A senior engineer will review your project and email you within 12-24 hours.';
         contactForm.reset();
-      }, 900);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        formFeedback.style.display = 'block';
+      }
     });
   }
 

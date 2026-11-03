@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Private Client Leads Database & Environment Variables
+leads.json
+.env
+
+# Logs & OS files
+npm-debug.log*
+.DS_Store

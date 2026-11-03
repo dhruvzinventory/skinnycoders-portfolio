@@ -1,56 +1,78 @@
-# SkinnyCoders — IT & Growth Engineering Agency Portfolio
+# SkinnyCoders — IT & Growth Engineering Agency Platform
 
-Professional, high-performance portfolio website for **SkinnyCoders**, an IT service provider agency delivering scalable software engineering, AI vector search, cloud infrastructure, and data-driven marketing solutions.
-
----
-
-## 💼 Featured Case Studies & Client Deliveries
-
-1. **LuxeWayRide (Live Client Platform):** Production travel booking platform in Next.js & TypeScript (`luxewayride.com`).
-2. **ContextIQ (AI Vector Search):** Multi-document question answering with FAISS vector retrieval, BM25 keyword search, and automated claim verification.
-3. **Repo Explorer (Cloud & DevOps):** High-throughput GitHub analysis platform with Redis in-memory caching, rate limiting, Terraform IaC, and Kubernetes orchestration.
-4. **SkillSwap:** Full-stack peer-to-peer collaborative marketplace built with React, Node.js, and MongoDB.
-5. **Enterprise Java Backend Services:** Production-grade Java & Spring Boot microservices, transactional SQL optimization, and automated Postman test suites.
-6. **CS Classes App:** Native iOS educational platform built in Swift and UIKit featuring DSA learning modules.
-7. **Real-Time WebSocket Engine:** Low-latency bidirectional messaging system with Redis caching and multi-room socket multiplexing.
-8. **Growth & Monetization:** High-intent Google Ads campaigns, Google AdSense RPM optimization, and technical SEO.
+Production-ready web platform and backend API for **SkinnyCoders**, an elite IT service provider agency delivering scalable software engineering, AI vector search, cloud infrastructure, and data-driven marketing solutions.
 
 ---
 
-## 🚀 Services
+## ⚡ Backend REST API Endpoints
 
-### Technology Services
-- **Website Development:** Next.js, React, Jamstack, Headless CMS
-- **Mobile App Development:** Swift (iOS UIKit), Flutter, React Native
-- **Backend & AI Engineering:** Java (Spring Boot), Python (FastAPI), FAISS Vector DB, Kafka, PostgreSQL, MongoDB
-- **Custom Software Solutions:** SaaS architecture, ERP/CRM portals, and workflow automation
-- **E-Commerce Solutions:** Shopify Plus, Headless Commerce, Stripe integrations
-- **Cloud & Automation:** AWS, Docker, Kubernetes (EKS), Terraform (IaC), Argo CD, GitHub Actions
+SkinnyCoders now features an active, production-grade Node.js/Express backend (`server.js`) that handles dynamic operations and lead capture:
 
-### Marketing & Growth Services
-- **Paid Advertising & AdSense:** Google Ads, AdSense yield optimization, Meta & LinkedIn campaigns
-- **Search Engine Optimization (SEO):** Technical audits, programmatic SEO, Core Web Vitals
-- **Social Media Management:** Multi-channel strategy, creatives, community growth
-- **B2B Lead Generation:** High-converting landing pages, email nurture, CRM sync
-- **Brand Strategy & Identity:** Visual systems, messaging hierarchies, pitch decks
-- **Integrated Digital Campaigns:** Multi-channel product launches and full-funnel attribution
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :--- |
+| `GET` | `/api/health` | Service uptime, status heartbeat & environment diagnostics | None (Public) |
+| `POST` | `/api/leads` | Validates client inquiry data and securely stores prospective client leads | None (Public) |
+| `GET` | `/api/leads` | Administrative inspection of all captured proposal inquiries | `x-api-key` Header |
+| `GET` | `/api/projects` | Dynamic JSON catalog of agency client deliverables & case studies | None (Public) |
+
+---
+
+## ⚠️ CRITICAL HOSTING NOTICE: GitHub Pages Compatibility
+
+> ### 🛑 Why you CANNOT host this full backend on GitHub Pages:
+> **GitHub Pages ONLY hosts static client-side files (`.html`, `.css`, `.js`, images).**  
+> GitHub Pages does **NOT** provide a Node.js or Python runtime environment. It cannot run `server.js`, cannot listen on backend ports, and cannot execute backend API endpoints like `POST /api/leads`.
+
+### Where to Deploy Instead:
+
+1. **All-in-One Cloud Hosting (Recommended & Free):**
+   - **[Render.com](https://render.com) or [Railway.app](https://railway.app):**
+     - Connect your GitHub repository.
+     - Set Build Command: `npm install`
+     - Set Start Command: `npm start`
+     - Both your frontend website and backend REST API will run together on a live public URL (e.g., `https://skinnycoders.onrender.com`) with automated SSL.
+2. **Cloud VPS / Docker (AWS / DigitalOcean):**
+   - Run on an EC2 instance or Droplet using `pm2 start server.js` behind an NGINX reverse proxy.
+3. **Hybrid Setup (Static Frontend + External API):**
+   - You *can* host `index.html` on GitHub Pages if you host `server.js` on Render/Railway, and configure `script.js` to send requests to `https://your-api.onrender.com/api/leads`.
 
 ---
 
 ## 🛠️ Project Structure
 ```
 skinnycoders-portfolio/
-├── index.html     # Agency portfolio markup, case studies & services
-├── styles.css     # Responsive dark-theme modern agency styling
-├── script.js      # Filter animations, dynamic year, and contact interaction
-└── README.md      # Documentation
+├── server.js          # Express backend API & static web server
+├── package.json       # Node.js dependencies & scripts
+├── .env.example       # Environment configuration template
+├── .gitignore         # Ignores node_modules, private leads.json, and .env
+├── index.html         # Agency frontend with animated SVG logo & hero console
+├── logo-showcase.html # Standalone brand identity preview page
+├── styles.css         # Responsive Sora-powered dark-theme styling
+├── script.js          # Interactive filters, console tabs & API fetch integration
+└── README.md          # Documentation & deployment guide
 ```
 
-## 🌐 Local Setup
-Simply open `index.html` in any modern web browser or serve it with:
-```bash
-npx serve .
-```
+---
 
-## 📦 Deployment
-Deploy with zero configuration to **Vercel**, **Netlify**, or **GitHub Pages**.
+## 💻 Local Development Setup
+
+1. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run the Backend API & Web Server:**
+   ```bash
+   npm start
+   ```
+   *The server will start at `http://localhost:5000` serving both the full interactive website and the REST API endpoints.*
+
+3. **Verify API Health:**
+   ```bash
+   curl http://localhost:5000/api/health
+   ```
+
+4. **Inspect Captured Leads (Admin):**
+   ```bash
+   curl http://localhost:5000/api/leads -H "x-api-key: skinny_admin_secret_key_change_me"
+   ```
